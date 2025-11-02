@@ -21,3 +21,11 @@ function productExceptSelf(nums) {
 
 console.log(productExceptSelf([1, 2, 3, 4]));
 // Output: [24, 12, 8, 6]
+
+
+// | i | Exclude   | Product |
+// | - | --------- | ------- |
+// | 0 | [2, 3, 4] | 24      |
+// | 1 | [1, 3, 4] | 12      |
+// | 2 | [1, 2, 4] | 8       |
+// | 3 | [1, 2, 3] | 6       |

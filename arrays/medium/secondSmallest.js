@@ -1,6 +1,6 @@
 function secondSmallest(arr){
-    min=arr[0]
-    secondSmallest=arr[0]
+    min=Infinity
+    secondSmallest=Infinity
     for(let i=1;i<arr.length;i++){
         if(arr[i]<min){
             secondSmallest=min
