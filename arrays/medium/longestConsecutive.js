@@ -22,3 +22,4 @@ function longestConsecutive(nums) {
 
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2]));
 // Output: 4
+// [1,2,3,4]->4 is longest
