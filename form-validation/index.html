@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+    .success {
+      color: green;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Registration Form</h2>
+
+  <form id="myForm">
+    <label>
+      Name:
+      <input type="text" id="name" />
+      <div id="nameError" class="error"></div>
+    </label>
+    <br /><br />
+
+    <label>
+      Email:
+      <input type="email" id="email" />
+      <div id="emailError" class="error"></div>
+    </label>
+    <br /><br />
+
+    <label>
+      Password:
+      <input type="password" id="password" />
+      <div id="passwordError" class="error"></div>
+    </label>
+    <br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="successMessage" class="success"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
