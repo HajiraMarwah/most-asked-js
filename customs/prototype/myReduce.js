@@ -7,3 +7,6 @@ Array.prototype.myReduce=function(callback,initialValue){
     return accumulator
 }
 console.log([1,2,3,4,5,6].myReduce((sum,x)=>sum+x,0))
+//  reduce keeps a running value called accumulator.
+//  For each element, we call the callback and update the accumulator. 
+// At the end, we return the accumulated result.
