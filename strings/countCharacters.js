@@ -1,14 +1,11 @@
-function charCount(str){
-    let compressed=""
-    let count=1
+function countChar(str){
+    str=str.toLowerCase()
+    let count={}
     for(let i=0;i<str.length;i++){
-        if(str[i]===str[i+1]){
-            count++
-        }else{
-            compressed+=str[i]+count
-            count=1
-        }
+        let char=str[i]
+        count[char]=(count[char]||0)+1
     }
-    return compressed
+    return count
+    
 }
-console.log(charCount("abcdaedfed"))
+console.log(countChar('abcdwsacd'))

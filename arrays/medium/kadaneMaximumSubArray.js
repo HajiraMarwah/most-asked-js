@@ -6,7 +6,6 @@ function maxSubArray(nums) {
     // Either add current number to previous sum,
     // or start new sum from current number
     currentSum = Math.max(nums[i], currentSum + nums[i]);
-
     // Update max if currentSum is greater
     maxSoFar = Math.max(maxSoFar, currentSum);
   }
