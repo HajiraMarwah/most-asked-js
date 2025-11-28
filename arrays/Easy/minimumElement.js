@@ -1,5 +1,5 @@
 function minimumElement(arr){
-    minimum=arr[0]
+    minimum=Infinity
     for(let i=1;i<arr.length;i++){
         if(arr[i]<minimum){
            minimum=arr[i]
